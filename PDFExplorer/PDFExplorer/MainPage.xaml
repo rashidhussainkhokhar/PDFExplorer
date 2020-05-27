@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:PDFExplorer"
+             x:Class="PDFExplorer.MainPage"
+             
+             >
+
+    <StackLayout>
+
+        <Label Text="PDF Viewer"
+               FontAttributes="Bold"
+               HorizontalOptions="Center" />
+        
+        <Image x:Name="image1" Margin="40,0,0,0" >
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer
+                    Tapped="OnImage1Tap"
+                    NumberOfTapsRequired="1">
+                    
+                </TapGestureRecognizer>
+            </Image.GestureRecognizers>
+        </Image>
+
+
+        <Image x:Name="image2"  Margin="40,0,0,0">
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer
+                    Tapped="OnImage2Tap"
+                    NumberOfTapsRequired="1">
+
+                </TapGestureRecognizer>
+            </Image.GestureRecognizers>
+        </Image>
+
+        <Image x:Name="image3"  Margin="40,0,0,0">
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer
+                    Tapped="OnImage3Tap"
+                    NumberOfTapsRequired="1">
+
+                </TapGestureRecognizer>
+            </Image.GestureRecognizers>
+        </Image>
+
+
+    </StackLayout>
+
+</ContentPage>
